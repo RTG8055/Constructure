@@ -35,19 +35,17 @@ CREATE TABLE `civicq`.`questions` (
   PRIMARY KEY (`ques_id`));
 
 
-delimiter $$
-create procedure `insert_player`(  IN p_name VARCHAR(45),    IN p_regno VARCHAR(45), IN p_email VARCHAR(45), IN p_password VARCHAR(200), in p_college varchar(20))
-begin
-	insert into players(name,reg_no,email,password,college,curr_ques_id,r1_res,r2_res,r3_res,r4_res,r5_res,r6_res,curr_trial)
-		values ( p_name,p_regno,p_email,p_password,p_college,'01_01',0,0,0,0,0,0,0);
-end$$
-delimiter ;
+DELIMITER $$
+CREATE PROCEDURE `insert_player`(IN p_name VARCHAR(45), IN p_regno VARCHAR(45), IN p_email VARCHAR(45), IN p_password VARCHAR(200), IN p_college varchar(20))
+BEGIN
+	INSERT INTO players(name, reg_no, email, password, college, curr_ques_id, r1_res, r2_res, r3_res, r4_res, r5_res, r6_res, curr_trial)
+		values (p_name, p_regno, p_email, p_password, p_college, '01_01', 0, 0, 0, 0, 0, 0, 0);
+END$$
+DELIMITER;
 
 call insert_player('rahul','150911112','abc@gmail.com','rahul123','MIT');
 
 select * from players;
-
-
 
 
 DELIMITER $$
@@ -55,6 +53,6 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `validateLogin`(
 IN p_username VARCHAR(45)
 )
 BEGIN
-    select * from tbl_user where user_name = p_username;
+    SELECT * FROM tbl_user WHERE user_name = p_username;
 END$$
 DELIMITER ;
