@@ -34,27 +34,42 @@ CREATE TABLE `civicq`.`questions` (
   
   PRIMARY KEY (`ques_id`));
 
+---CREATE PLAYER PROCEDURE
+---SIGNS UP A USER IF NOT ALREADY EXISTS
 
+drop procedure if exists `insert_player`;
 delimiter $$
-create procedure `insert_player`(  IN p_name VARCHAR(45),    IN p_regno VARCHAR(45), IN p_email VARCHAR(45), IN p_password VARCHAR(200), in p_college varchar(20))
+create procedure `insert_player`(  IN p_name VARCHAR(45),    IN p_regno VARCHAR(45), IN p_email VARCHAR(45), IN p_password VARCHAR(200), in p_college varchar(20),out flag int)
 begin
-	insert into players(name,reg_no,email,password,college,curr_ques_id,r1_res,r2_res,r3_res,r4_res,r5_res,r6_res,curr_trial)
-		values ( p_name,p_regno,p_email,p_password,p_college,'01_01',0,0,0,0,0,0,0);
+	if exists( SELECT ID FROM players where reg_no = p_regno) 
+	then set flag =0;
+    else
+	insert into players(name,reg_no,email,password,college,curr_ques_id,r1_res,r2_res,r3_res,r4_res,r5_res,r6_res,curr_trial) values ( p_name,p_regno,p_email,p_password,p_college,'01_01',0,0,0,0,0,0,0);
+	set flag=1;
+    end if;
 end$$
 delimiter ;
 
-call insert_player('rahul','150911112','abc@gmail.com','rahul123','MIT');
+call insert_player('rahul','150911122','abc@gmail.com','rahul123','MIT',@flag);
+select @flag;
 
 select * from players;
 
+---VALIDATE LOGIN PROCEDURE
+---RETURNS 0 IN THE VARIABLE PASSED IF NOT FOUND AND THE ID OF THE PLAYER IF FOUND
 
 
+delimiter $$
+create procedure civicq.validate_login(in e varchar(45), in p varchar(20), out val int)
+begin
+select id into val from players where email = e and password=p;
+set val = ifnull(val,0);
+end
+$$
+delimiter ;
 
-DELIMITER $$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `validateLogin`(
-IN p_username VARCHAR(45)
-)
-BEGIN
-    select * from tbl_user where user_name = p_username;
-END$$
-DELIMITER ;
+
+call validate_login('abc@gmail.com','rahul13',@ans);
+
+select @ans;
+
