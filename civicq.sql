@@ -5,9 +5,10 @@ CREATE TABLE players (
   `name` VARCHAR(45),
   `reg_no` VARCHAR(45),
   `email` VARCHAR(45),
+  `mobile` BIGINT(10),
   `password` VARCHAR(200),
   `college` VARCHAR(20),
-  -- `curr_round` playersBIGINT(20),
+  `ques_asked` BIGINT(40),  --array of 1s and 0s specifiying which ques has been asked
   `curr_ques_id` VARCHAR(20), -- xx_yy format xx corresponds to the round number and yy corresponds to the ques no.
   `r1_res` VARCHAR(20),
   `r2_res` VARCHAR(20),
@@ -40,18 +41,18 @@ CREATE TABLE `civicq`.`questions` (
 
 drop procedure if exists `insert_player`;
 delimiter $$
-create procedure `insert_player`(  IN p_name VARCHAR(45),    IN p_regno VARCHAR(45), IN p_email VARCHAR(45), IN p_password VARCHAR(200), in p_college varchar(20),out flag int)
+create procedure `insert_player`(  IN p_name VARCHAR(45), IN p_regno VARCHAR(45), IN p_email VARCHAR(45),IN p_mobile BIGINT(10), IN p_password VARCHAR(200), in p_college varchar(20),out flag int)
 begin
 	if exists( SELECT ID FROM players where reg_no = p_regno) 
 	then set flag =0;
     else
-	insert into players(name,reg_no,email,password,college,curr_ques_id,r1_res,r2_res,r3_res,r4_res,r5_res,r6_res,curr_trial) values ( p_name,p_regno,p_email,p_password,p_college,'01_01',0,0,0,0,0,0,0);
+	insert into players(name,reg_no,email,mobile,password,college,ques_asked,curr_ques_id,r1_res,r2_res,r3_res,r4_res,r5_res,r6_res,curr_trial) values ( p_name,p_regno,p_email,p_mobile,p_password,p_college,0,'01_01',0,0,0,0,0,0,0);
 	set flag=1;
     end if;
 end$$
 delimiter ;
 
-call insert_player('rahul','150911122','abc@gmail.com','rahul123','MIT',@flag);
+call insert_player('rahul','150911122','abc@gmail.com','9008318345','rahul123','MIT',@flag);
 select @flag;
 
 select * from players;
@@ -59,7 +60,7 @@ select * from players;
 ---VALIDATE LOGIN PROCEDURE
 ---RETURNS 0 IN THE VARIABLE PASSED IF NOT FOUND AND THE ID OF THE PLAYER IF FOUND
 
-<<<<<<< HEAD
+
 
 delimiter $$
 create procedure civicq.validate_login(in e varchar(45), in p varchar(20), out val int)
