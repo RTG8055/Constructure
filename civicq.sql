@@ -37,6 +37,7 @@ CREATE TABLE `civicq`.`questions` (
 ---CREATE PLAYER PROCEDURE
 ---SIGNS UP A USER IF NOT ALREADY EXISTS
 
+
 drop procedure if exists `insert_player`;
 delimiter $$
 create procedure `insert_player`(  IN p_name VARCHAR(45),    IN p_regno VARCHAR(45), IN p_email VARCHAR(45), IN p_password VARCHAR(200), in p_college varchar(20),out flag int)
@@ -58,6 +59,7 @@ select * from players;
 ---VALIDATE LOGIN PROCEDURE
 ---RETURNS 0 IN THE VARIABLE PASSED IF NOT FOUND AND THE ID OF THE PLAYER IF FOUND
 
+<<<<<<< HEAD
 
 delimiter $$
 create procedure civicq.validate_login(in e varchar(45), in p varchar(20), out val int)
