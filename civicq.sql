@@ -8,7 +8,7 @@ CREATE TABLE players (
   `mobile` BIGINT(10),
   `password` VARCHAR(200),
   `college` VARCHAR(20),
-  `ques_asked` BIGINT(40),  --array of 1s and 0s specifiying which ques has been asked
+  `ques_asked` BIGINT(40),  -- array of 1s and 0s specifiying which ques has been asked
   `curr_ques_id` VARCHAR(20), -- xx_yy format xx corresponds to the round number and yy corresponds to the ques no.
   `r1_res` VARCHAR(20),
   `r2_res` VARCHAR(20),
