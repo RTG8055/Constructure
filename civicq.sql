@@ -23,13 +23,15 @@ create table questions
 (
   ques_id varchar(10) primary Key,
     question varchar(1000),
+    ques_image varchar(100),
     op1 varchar(500),
     op2 varchar(500),
     op3 varchar(500),
     op4 varchar(500),
     ans varchar(10),
+    flag varchar(20),
     point_wt varchar(10),
-    moeny_wt varchar(10)
+    money_wt varchar(10)
     
 );
 

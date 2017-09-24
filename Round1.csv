@@ -1,0 +1,164 @@
+sr no,ques_id,question,ques_image(if any),op1,op2,op3,op4,ans,pt_wieght,money_weight(in lakhs),Image_question or not,(0 or 1)
+example,01_03,Which one is a fruit?,,Brinjal,Cabbage,Potato,Mango,op4,50,10,0,
+ex_image_q,02_04,pick the correct maze,,02_04_01.jpg,02_04_02.jpg,02_04_03.jpg,02_04_04.jpg,op2,100,2.5,1,
+,roundNo_QuesNo,,,roundNo_QuesNo_OptionNo,,,,,,,,
+ROUND1,,,,,,,,,,,,
+1,01_01,"""The number that must be added to each of the number 5,27,14 and 37 to make the ratio of first two numbers equal to the ratio of the last two number is""",null,183,190,198,193,op4,50,,0,
+2,01_02,"""In the CBSE boards exams last year,53% passed in Physics,61% passed in Maths,60% passed in Chemistry,24% passed in Physics and Maths,35% in Maths and Chemistry,27% Physics and Chemistry and 5% in none.
+If the number of students in the class is 300, what will be the % change in the number of passes in only two subjects, only if original number of students is 200?""",null,More than 50%,Less than 50%,50%,None of these,op3,100,,0,
+3,01_03,"""DEPRL: LRDPED :: POCKET: ________""",null,TECHOP,TEKCOP,TELNOQ,TEKOCP,op2,50,,0,
+4,01_04,"""Seven persons consisting of two children Samyak and chinttu, two men chinki and Danny and three women Eshawari, Falguni and Ganga are sitting in a row. Chinki and danny have only one person that too a child sitting between them. Only Samyak sits between Ganga and Eshawari. No two children, no two males and no two females sit next to each other. Eshawari sits to immediate left of chinki. Who is sitting at the extreme left of the row?""",null,Ganga,Eshawari,Falguni,Chinki,op1,50,,0,
+5,01_05,"""Choose the image that completes the pattern""",01_05.png,01_05_01.png,01_05_02.png,01_05_03.png,01_05_04.png,op4,50,,1,
+6,01_06,"""One day I met three persons A, B and C each of whom belonged to a different tribe amongst Truth-tellers, Liars and Alternators. It is also known that the truth-tellers always speak the truth, the liars always tell lies and the Alternators alternate between truth and lies in any order. When asked to introduce themselves, each of them gave two replies as given below:""
+A: B is a liar. I am the truth-teller.
+B: I am not the liar. C is the truth teller
+C: A is not the Truth-teller. I am not the Liar.
+Who among them is Liar?
+",null,A,B,C,Cannot be determined,op2,100,,0,
+7,01_07,"""Choose the image that completes the pattern""",01_07.jpg,01_07_01.jgp,01_07_02.jgp,01_07_03.jgp,01_07_04.jpg,op2,50,,1,
+8,01_08,"""In a survey among students at all the IIMs it was found that 48% preferred cola,54% preferred coffee and 64% smoked .Of the total 28% liked cola and coffee,32% smoked and drank coffee and 30% smoked and drank cola. Only 6% did none of these. If the total students are 2000 then the percentage of those who like coffee and smoking but not cola is""
+",null,14,less than 14,14.9,more than 15,op1,100,,0,
+9,01_09,"""Pointing to a person, Shyam said, 'he is the only brother of my father's mother's daugher'. How is the person related to Shyam?""",null,Brother,Uncle,Uncle,Son,op2,50,,0,
+10,01_10,"""A mixture contains alcohol and water in the ratio of 15:9. On adding 23 litres of water, the ratio of alcohol to water becomes 5:10. The quantity of alcohol in the mixture is""",null,18.76,19.38,14.9,16.43,op4,50,,0,
+11,01_11,"""Two stations A and B are 520 km apart on a straight line. One train starts from A at 7 am and travels towards B at 50 kmph. Another train starts from B at 8 am and travels towards A at a speed of 45 kmph. At what time will they meet?""",null,12:00 AM,11:00 AM,11:30 AM,11:26 AM,op1,50,,0,
+12,01_12,"""which of the following sets are logically related
+1.No frontier is limit.
+2.Few margins are not frontiers
+3.All margins are not frontiers
+4.Few margins are frontiers
+5.No margin is limit
+6.Few limits are margin""",null,521,513,146,136,op2,100,,0,
+13,01_13,"""JAPAN: SUMO :: ______ : ______""",null,AMERICA : RUGBY,JAMAICA: BASE BALL,BHUTAN: ARCHERY,ENGLAND: FOOTBALL,op3,100,,0,
+14,01_14,"""16 people entered a theater before Shyam. 8 people entered the theater between Shyam and Suraj and 20 People entered the theater after Suraj. how many people are there in the theater?""
+",null,44,46,38,None of these,op4,50,,0,
+15,01_15,"""Which of the shapes below continues the sequence""",01_15.png,01_15_01.png,01_15_02.png,01_15_03.png,01_15_04.png,op2,50,,1,
+16,01_16,"""A & B are two towns. A person covers the distance from A to B on cycle at 23 kmph and returns to A by a boat running at a uniform speed of 5kmph. His average speed for whole journey is """,null,8.3,8.2,8.4,8.1,op2,50,,0,
+17,01_17,"""60 men took a dip in a water tank 50 m long and 34 m broad on a religious day. If the average displacement of water by a man is 5m3, then rise in water level in the tank will be
+	17.6 cm
+	15.4 cm
+	19.6 cm
+	18.2 cm
+""",null,17.6 cm,15.4 cm,19..6 cm,18.2 cm,op1,50,,0,
+18,01_18,"""Which of the shapes below replaces the missing box""",01_18.png,01_18_01.png,01_18_02.png,01_18_03.png,01_18_04.png,op4,100,,1,
+19,01_19,"""A group of 78 people watch HBO, Movies Now and Comedy-Central of these, 36 watch HBO,48 watch Movies Now and 32 watch Comedy Central. If 14 watch both HBO and Movies Now, 20 watch both Movies Now and Comedy Central and 12 watch both Comedy Central and HBO. Find the ratio of the number of people who watch only HBO to the number of people who only watch Comedy Central. ""
+
+",null,9:04,3:02,5:03,7:04,,100,,0,
+20,01_20,"""In question below are given statements followed by conclusions. You have to assume everything in the statements to be true, then consider the conclusions together and decide which of them logically follows beyond a reasonable doubt from the information given in the statement.
+Statements: 
+A)Some pastries are cars.
+B)Some cars are mountains.
+C)Some mobiles are cars.
+
+Conclusions: 
+I)All mobiles are mountains.
+II)All mobiles are pastries.
+III)Some pastries are mountains.
+IV)Some mobiles are not pastries.""",null,Only I follows,Only either II or IV follows,Only I or III follows,Only I and IV follows,op2,100,,0,
+21,01_21,"""Which of the shapes below replaces the missing box""",01_21.png,01_21_01.png,01_21_02.png,01_21_03.png,01_21_04.png,op2,50,,1,
+22,01_22,"""Consider the following sum
+LEAVE + SHARE = 116578
+If each letter in the words represents a different digit then which of the following can represent 116578?""",null,VVALSR,HHLSAV,AAVSRL,RRSVAL,op2,100,,0,
+23,01_23,"""A library has 723 visitors on Sundays and 340 on other days. The average number of visitors per day in a month of 30 days beginning with a Sunday is """,null,404,402,401,403,op1,50,,0,
+24,01_24,"""In question below are given statements followed by conclusions. You have to assume everything in the statements to be true, then consider the conclusions together and decide which of them logically follows beyond a reasonable doubt from the information given in the statement.
+Statements: 
+A)All oranges are mangoes
+B)All berries are mangoes
+C)All mangoes are melon.
+
+Conclusions:
+I)No orange is melon.
+II)Some berries are not melon.
+III)Some oranges are berries.
+IV)All melons are oranges
+""",null,Only I follows,Only II and III follows,"Only I,II and III follows",None of these,op4,100,,0,
+25,01_25,"""Choose the odd one out""",null,01_25_01.png,01_25_02.png,01_25_03.png,01_25_04.png,op4,50,,1,
+,,,,,,,,,,,,
+ROUND2,,,,,,,,,,,,
+1,02_01,,,,,,,,,,,
+2,02_02,,,,,,,,,,,
+3,02_03,,,,,,,,,,,
+4,02_04,,,,,,,,,,,
+5,02_05,,,,,,,,,,,
+6,02_06,,,,,,,,,,,
+7,02_07,,,,,,,,,,,
+8,02_08,,,,,,,,,,,
+9,02_09,,,,,,,,,,,
+10,02_10,,,,,,,,,,,
+11,02_11,,,,,,,,,,,
+12,02_12,,,,,,,,,,,
+13,02_13,,,,,,,,,,,
+14,02_14,,,,,,,,,,,
+15,02_15,,,,,,,,,,,
+16,02_16,,,,,,,,,,,
+17,02_17,,,,,,,,,,,
+18,02_18,,,,,,,,,,,
+19,02_19,,,,,,,,,,,
+20,02_20,,,,,,,,,,,
+,,,,,,,,,,,,
+ROUND3,,,,,,,,,,,,
+1,03_01,,,,,,,,,,,
+2,03_02,,,,,,,,,,,
+3,03_03,,,,,,,,,,,
+4,03_04,,,,,,,,,,,
+5,03_05,,,,,,,,,,,
+6,03_06,,,,,,,,,,,
+7,03_07,,,,,,,,,,,
+8,03_08,,,,,,,,,,,
+9,03_09,,,,,,,,,,,
+10,03_10,,,,,,,,,,,
+11,03_11,,,,,,,,,,,
+12,03_12,,,,,,,,,,,
+13,03_13,,,,,,,,,,,
+14,03_14,,,,,,,,,,,
+15,03_15,,,,,,,,,,,
+,,,,,,,,,,,,
+ROUND4,,,,,,,,,,,,
+1,04_01,,,,,,,,,,,
+2,04_02,,,,,,,,,,,
+3,04_03,,,,,,,,,,,
+4,04_04,,,,,,,,,,,
+5,04_05,,,,,,,,,,,
+6,04_06,,,,,,,,,,,
+7,04_07,,,,,,,,,,,
+8,04_08,,,,,,,,,,,
+9,04_09,,,,,,,,,,,
+10,04_10,,,,,,,,,,,
+11,04_11,,,,,,,,,,,
+12,04_12,,,,,,,,,,,
+13,04_13,,,,,,,,,,,
+14,04_14,,,,,,,,,,,
+15,04_15,,,,,,,,,,,
+,,,,,,,,,,,,
+ROUND5,,,,,,,,,,,,
+1,05_01,,,,,,,,,,,
+2,05_02,,,,,,,,,,,
+3,05_03,,,,,,,,,,,
+4,05_04,,,,,,,,,,,
+5,05_05,,,,,,,,,,,
+6,05_06,,,,,,,,,,,
+7,05_07,,,,,,,,,,,
+8,05_08,,,,,,,,,,,
+9,05_09,,,,,,,,,,,
+10,05_10,,,,,,,,,,,
+11,05_11,,,,,,,,,,,
+12,05_12,,,,,,,,,,,
+13,05_13,,,,,,,,,,,
+14,05_14,,,,,,,,,,,
+15,05_15,,,,,,,,,,,
+,,,,,,,,,,,,
+ROUND6,,,,,,,,,,,,
+1,06_01,,,,,,,,,,,
+2,06_02,,,,,,,,,,,
+3,06_03,,,,,,,,,,,
+4,06_04,,,,,,,,,,,
+5,06_05,,,,,,,,,,,
+6,06_06,,,,,,,,,,,
+7,06_07,,,,,,,,,,,
+8,06_08,,,,,,,,,,,
+9,06_09,,,,,,,,,,,
+10,06_10,,,,,,,,,,,
+11,06_11,,,,,,,,,,,
+12,06_12,,,,,,,,,,,
+13,06_13,,,,,,,,,,,
+14,06_14,,,,,,,,,,,
+15,06_15,,,,,,,,,,,
