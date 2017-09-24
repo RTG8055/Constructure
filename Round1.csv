@@ -9,16 +9,11 @@ If the number of students in the class is 300, what will be the % change in the 
 3,01_03,"""DEPRL: LRDPED :: POCKET: ________""",null,TECHOP,TEKCOP,TELNOQ,TEKOCP,op2,50,,0,
 4,01_04,"""Seven persons consisting of two children Samyak and chinttu, two men chinki and Danny and three women Eshawari, Falguni and Ganga are sitting in a row. Chinki and danny have only one person that too a child sitting between them. Only Samyak sits between Ganga and Eshawari. No two children, no two males and no two females sit next to each other. Eshawari sits to immediate left of chinki. Who is sitting at the extreme left of the row?""",null,Ganga,Eshawari,Falguni,Chinki,op1,50,,0,
 5,01_05,"""Choose the image that completes the pattern""",01_05.png,01_05_01.png,01_05_02.png,01_05_03.png,01_05_04.png,op4,50,,1,
-6,01_06,"""One day I met three persons A, B and C each of whom belonged to a different tribe amongst Truth-tellers, Liars and Alternators. It is also known that the truth-tellers always speak the truth, the liars always tell lies and the Alternators alternate between truth and lies in any order. When asked to introduce themselves, each of them gave two replies as given below:""
-A: B is a liar. I am the truth-teller.
-B: I am not the liar. C is the truth teller
-C: A is not the Truth-teller. I am not the Liar.
-Who among them is Liar?
-",null,A,B,C,Cannot be determined,op2,100,,0,
+6,01_06,"""One day I met three persons A, B and C each of whom belonged to a different tribe amongst Truth-tellers, Liars and Alternators. It is also known that the truth-tellers always speak the truth, the liars always tell lies and the Alternators alternate between truth and lies in any order. When asked to introduce themselves, each of them gave two replies as given below: A: B is a liar. I am the truth-teller. B: I am not the liar. C is the truth teller C: A is not the Truth-teller. I am not the Liar. Who among them is Liar?”",null,A,B,C,Cannot be determined,op2,100,,0,
 7,01_07,"""Choose the image that completes the pattern""",01_07.jpg,01_07_01.jgp,01_07_02.jgp,01_07_03.jgp,01_07_04.jpg,op2,50,,1,
 8,01_08,"""In a survey among students at all the IIMs it was found that 48% preferred cola,54% preferred coffee and 64% smoked .Of the total 28% liked cola and coffee,32% smoked and drank coffee and 30% smoked and drank cola. Only 6% did none of these. If the total students are 2000 then the percentage of those who like coffee and smoking but not cola is""
 ",null,14,less than 14,14.9,more than 15,op1,100,,0,
-9,01_09,"""Pointing to a person, Shyam said, 'he is the only brother of my father's mother's daugher'. How is the person related to Shyam?""",null,Brother,Uncle,Uncle,Son,op2,50,,0,
+9,01_09,"""Pointing to a person, Shyam said, \'he is the only brother of my father\'s mother\'s daugher\'. How is the person related to Shyam?""",null,Brother,Uncle,Uncle,Son,op2,50,,0,
 10,01_10,"""A mixture contains alcohol and water in the ratio of 15:9. On adding 23 litres of water, the ratio of alcohol to water becomes 5:10. The quantity of alcohol in the mixture is""",null,18.76,19.38,14.9,16.43,op4,50,,0,
 11,01_11,"""Two stations A and B are 520 km apart on a straight line. One train starts from A at 7 am and travels towards B at 50 kmph. Another train starts from B at 8 am and travels towards A at a speed of 45 kmph. At what time will they meet?""",null,12:00 AM,11:00 AM,11:30 AM,11:26 AM,op1,50,,0,
 12,01_12,"""which of the following sets are logically related
