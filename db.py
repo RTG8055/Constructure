@@ -8,10 +8,10 @@ db  = sql.connect('139.59.17.132','user2','passw','civicq')
 c = db.cursor()
 
 query = " INSERT INTO questions VALUES "
-with open('Round2.csv') as file:
+with open('AllRounds.csv') as file:
 	readr = csv.reader(file)
 	for r in readr:
-		if(r[0] == "ROUND2"):
+		if(r[0] == "ROUND6"):
 			flag =1
 			continue;
 		if(flag==1):
@@ -33,7 +33,7 @@ with open('Round2.csv') as file:
 				print(e)
 				db.rollback()
 				pass
-		if(count == 20):
+		if(count == 25):
 			flag=0
 # disconnect from server
 db.close()

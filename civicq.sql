@@ -19,10 +19,11 @@ CREATE TABLE players (
   `curr_trial` INT(5), -- tells which trial is he currently on. 0 for fresh
   PRIMARY KEY (`id`));
 
+drop table civicq.score;
 CREATE TABLE `civicq`.`score` (
-  `user_id` BIGINT REFERENCES `players` (`user_id`),
-  `points` BIGINT(20),
-  `pres_ques_id` VARCHAR(20)
+  `id` BIGINT REFERENCES `players` (`id`),
+  `points` BIGINT(30),
+  `money` varchar(30)
   );
 
 CREATE TABLE `civicq`.`questions` (
@@ -74,4 +75,6 @@ delimiter ;
 -- call validate_login('abc@gmail.com','rahul13',@ans);
 
 select @ans;
+
+create trigger 
 
